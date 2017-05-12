@@ -1,0 +1,63 @@
+html{
+  font-size: 62.5%;
+}
+
+.body-page {
+  min-width: 320px;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  line-height: $f-base-lh;
+}
+.body-wrapper{
+  overflow: hidden;
+  min-width: 320px;
+  @media (min-width: 320px){
+    overflow-x: auto;
+  }
+}
+
+// Центровщик
+.container-inner {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  @media (min-width: 1700px) {
+    width: 1600px;
+    margin: 0 auto;
+  }
+  @media (min-width: 1200px) {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: auto;
+  }
+
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+
+  @media (min-width: 768px) {
+    width: 750px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  @media (min-width: 450px) {
+    width: 440px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  @media (min-width: 320px) {
+    width: 310px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+//Clearfix
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
