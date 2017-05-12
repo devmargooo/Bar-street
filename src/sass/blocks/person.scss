@@ -1,0 +1,31 @@
+.person{
+  width: 20rem;
+  height: 10rem;
+}
+
+.person__info{
+  color: $c-primary;
+}
+.person__info_small{
+  @extend .person-info;
+}
+
+.person__info_extended{
+  @extend .person-info;
+}
+
+.person__info-title{
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.person__info-text{
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.person__info-contacts{
+  color: $c-third;
+}
+.person__info-contact{
+  display: inline-block;
+}
