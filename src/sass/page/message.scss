@@ -1,4 +1,35 @@
+@mixin tooltip-theme{
+  background: $c-fg-primary;
+  color: $c-primary;
+  filter: drop-shadow(rgba(122, 56, 85, 0.11)  0.3rem 0.5rem 2.1rem);
+  font-size: $f-tooltip-size;
+  line-height: $f-tooltip-lh;
+  color: $c-primary;
+  font-style: italic;
+}
+
 .message{
   height: 48rem;
   background: $c-bg-primary;
+}
+
+.message__tooltip{
+  @include tooltip-theme;
+  position: absolute;
+  top:0;
+  width:100%;
+  height: 31rem;
+  padding: 4.2rem 3.8rem;
+  border-radius: 6px;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -0.8rem;
+    width: 0; height: 0;
+    border-top: 3rem solid $c-fg-primary;
+    border-right: 1.7rem solid transparent;
+    border-left: 1.7rem solid transparent;
+  }
 }

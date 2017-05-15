@@ -1,9 +1,9 @@
 @mixin person-info-theme{
-  font-size: $f-person;
+  font-size: $f-person-size;
   line-height: 1.66666666667;
 }
 @mixin person-accent-theme{
-  font-size: $f-person-accent;
+  font-size: $f-person-accent-size;
   font-weight: bold;
   line-height: 2;
   text-transform: uppercase;
