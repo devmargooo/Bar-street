@@ -1,31 +1,53 @@
+@mixin person-info-theme{
+  font-size: $f-person;
+  line-height: 1.66666666667;
+}
+@mixin person-accent-theme{
+  font-size: $f-person-accent;
+  font-weight: bold;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
 .person{
   width: 20rem;
   height: 10rem;
+  margin: 34.5rem auto 0;
 }
-
 .person__info{
   color: $c-primary;
+  line-height: $f-person-info-lh;
 }
 .person__info_small{
-  @extend .person-info;
+  @extend .person__info;
 }
 
 .person__info_extended{
-  @extend .person-info;
+  @extend .person__info;
 }
 
 .person__info-title{
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  @include person-accent-theme;
 }
 .person__info-text{
-  font-size: 1.2rem;
-  line-height: 2rem;
+  @include person-info-theme;
+}
+.person__info-phone{
+  @include person-info-theme;
 }
 .person__info-contacts{
+  @include person-accent-theme;
+  width: 15.5rem;
+  margin: 1.5rem auto 0;
   color: $c-third;
 }
 .person__info-contact{
   display: inline-block;
+  margin: 0 0.35rem;
+  &:first-child{
+    margin-left: 0;
+  }
+  &:last-child{
+    margin-right: 0;
+  }
 }

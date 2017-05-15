@@ -7,6 +7,7 @@ html{
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  font-family: $f-primary;
   line-height: $f-base-lh;
 }
 .body-wrapper{
@@ -60,4 +61,14 @@ html{
   content: "";
   display: table;
   clear: both;
+}
+
+//Float
+
+.obj_left{
+  float: left;
+}
+
+.obj_right{
+  float: right;
 }
