@@ -73,3 +73,14 @@ html{
   float: right;
 }
 
+//Check tabs options
+
+.responsive{
+  display: none;
+}
+.responsive-desktop{
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}

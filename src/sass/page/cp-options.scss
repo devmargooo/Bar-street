@@ -1,0 +1,17 @@
+@mixin cp-options-title{
+  color: $c-primary-dark;
+  font-size: $f-cp-options-title-size;
+  line-height: $f-cp-options-title-lh;
+}
+
+.cp-options{
+  background: $c-bg-primary;
+}
+.cp-options__title {
+  @include cp-options-title;
+  margin-top: 2.5rem;
+}
+
+.cp-options__tabs{
+  display: none;//mobile
+}

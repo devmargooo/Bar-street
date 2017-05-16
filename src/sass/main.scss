@@ -1,10 +1,11 @@
 @import "global/normalize";
 @import "global/fonts";
 @import "global/variables";
-@import "global/scaffolding";
-@import "global/general";
+@import "global/sprite-svg";
 @import "global/mixins";
 @import "global/icons";
+@import "global/scaffolding";
+@import "global/general";
 
 @import "../vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css";
 
@@ -16,3 +17,4 @@
 @import "page/header";
 @import "page/message";
 @import "page/cp-details";
+@import "page/cp-options";

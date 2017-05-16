@@ -39,7 +39,7 @@
     </section>
     <section class="cp-details">
       <div class="container-inner">
-        <h2 class="cp-details-title">Коммерческое предложение организации бара
+        <h2 class="cp-details__title">Коммерческое предложение организации бара
           <span class="cp-details__title_more"> для компании «Конструктивные решения»</span></h2>
         <p class="cp-details__number">№122 от 21 мая 2017</p>
         <div class="container-fluid">
@@ -55,9 +55,30 @@
         </div>
       </div>
     </section>
+    <section class="cp-options">
+      <div class="container-inner">
+        <h2 class="cp-options__title">Предлагаю 3 варианта по организации бара</h2>
+      </div>
+      <ul class="nav nav-tabs cp-options__tabs" role="tablist">
+        <li role="presentation" class="active"><a id="a-economy" href="#economy" aria-controls="economy" role="tab" data-toggle="tab">Эконом</a></li>
+        <li role="presentation"><a id="a-standart" href="#standart" aria-controls="standart" role="tab" data-toggle="tab">Стандарт</a></li>
+        <li role="presentation"><a id="a-wow" href="#wow" aria-controls="wow" role="tab" data-toggle="tab">WOW</a></li>
+      </ul>
+      <div class="tab-content cp-options__content">
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="economy">1</div>
+          <div role="tabpanel" class="tab-pane" id="standart">2</div>
+          <div role="tabpanel" class="tab-pane" id="wow">3</div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
 
   </footer>
+  <div class="responsive responsive-desktop"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
