@@ -1,0 +1,76 @@
+@mixin tabe-pane-inner-title-theme{
+  color: $c-primary-dark;
+  font-size: $f-tab-pane-title-size;
+  line-height: $f-tab-pane-title-lh;
+}
+@mixin tabe-pane-inner__description-theme{
+  color: $c-primary-dark;
+  font-size: $f-tab-pane-description-size;
+  line-height: $f-tab-pane-description-lh;
+  font-style: italic;
+}
+@mixin menu-theme{
+  background: $c-fg-primary;
+}
+@mixin menu-row-theme{
+  background: inherit;
+  &:nth-child(even) {
+    background: $c-bg-primary;
+  }
+  vertical-align: middle;
+  text-align: left;
+  color: $c-primary-dark;
+  font-size: $f-menu-size;
+  line-height: $f-menu-lh;
+}
+
+.tabe-pane-inner{
+  background: $c-bg-primary;
+}
+.tabe-pane-inner__title{
+  @include tabe-pane-inner-title-theme;
+  margin-top: 2.5rem;
+}
+.tabe-pane-inner__description{
+  @include tabe-pane-inner__description-theme;
+  position: relative;
+  padding: 2.8rem 6.4rem 3rem 0;
+}
+.tabe-pane-inner__description-phone{
+  position: absolute;
+  right: 1rem;
+  bottom: -0.5rem;
+}
+.tabe-pane-inner__menu{
+  @include menu-theme;
+  width: 100%;
+}
+.tabe-pane-inner__menu-cell{
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  &:nth-child(4n-3){//column 1
+    width: 4.2rem;
+    text-align: center;
+  }
+  &:nth-child(4n-2){
+    padding-right: 1.6rem;//column2
+  }
+  &:nth-child(4n){//column 4
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    font-weight: bold;
+  }
+}
+.tabe-pane-inner__menu-row{
+  @include menu-row-theme;
+  &:first-child {
+    .tabe-pane-inner__menu-cell{
+      padding-top: 4rem;
+    }
+  }
+}
+.tabe-pane-inner__menu-img{
+  max-width: 3rem;
+  max-height: 3rem;
+  margin: 0 auto;
+}

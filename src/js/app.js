@@ -2,8 +2,8 @@ var responsive = function(alias) {
     console.log($('.responsive-' + alias).is(':visible'));
     return $('.responsive-' + alias).is(':visible');
 };
-var resizeBlock = function() {
-    console.log("resizeBlock");
+var changeState = function() {
+    console.log("changeState");
     if (!responsive('desktop')) {
         var tabs = $(".tab-pane");
         console.log(tabs);
@@ -27,5 +27,5 @@ var resizeBlock = function() {
     }
 };
 
-$(window).on('resize', resizeBlock);
-$(document).ready(resizeBlock);
+$(window).on('resize', changeState);
+$(document).ready(changeState);

@@ -14,4 +14,7 @@
 
 .cp-options__tabs{
   display: none;//mobile
+  @media (min-width: 1200px) {
+    display: block;
+  }
 }
