@@ -68,3 +68,11 @@ $sprite: map-get($icons, sprite) !default;
     background-position: mq-px2em(map-get($iconMap, x) - 5) mq-px2em(map-get($iconMap, y) - 5);
   }
 }
+
+@mixin complementary-info-theme{
+  font-size: $f-complementary-info-size;
+  color: $c-secondary;
+  font-weight: bold;
+  line-height: $f-complementary-info-lh;
+  text-transform: uppercase;
+}

@@ -1,0 +1,18 @@
+@mixin cp-title-theme{
+  font-size: $f-cp-details-title-size;
+  line-height: $f-cp-details-title-lh;
+  color: $c-primary-dark;
+}
+.cp-details{
+  background: $c-bg-primary;
+}
+.cp-details__title{
+  @include cp-title-theme;
+  margin-top: 1.5rem;
+}
+.cp-details__title_more{
+  display: none;//mobile
+}
+.cp-details__number{
+  @include complementary-info-theme;
+}

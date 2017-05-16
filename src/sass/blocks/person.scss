@@ -11,11 +11,9 @@
 
 .person{
   width: 20rem;
-  height: 10rem;
-  margin: 34.5rem auto 0;
 }
 .person__info{
-  color: $c-primary;
+  color: $c-primary-dark;
   line-height: $f-person-info-lh;
 }
 .person__info_small{
@@ -39,7 +37,7 @@
   @include person-accent-theme;
   width: 15.5rem;
   margin: 1.5rem auto 0;
-  color: $c-third;
+  color: $c-complementary;
 }
 .person__info-contact{
   display: inline-block;

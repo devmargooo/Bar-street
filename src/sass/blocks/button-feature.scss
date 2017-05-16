@@ -1,0 +1,17 @@
+@mixin button-feature-theme{
+  border-radius: $br-button-feature;
+  border: $b-button-feature solid $c-button-feature-border;
+  color: $c-complementary;
+  text-transform: uppercase;
+  font-size: $f-complementary-info-size;
+  font-weight: bold;
+  text-align: left;
+}
+
+.button-feature{
+  @include button-feature-theme;
+  min-height: 7.2rem;
+  width: 100%;//
+  padding: 1.6rem 1rem 1rem 6.8rem;
+  margin-bottom: 1.8rem;
+}

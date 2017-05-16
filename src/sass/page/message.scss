@@ -1,15 +1,15 @@
 @mixin tooltip-theme{
-  background: $c-fg-primary;
-  color: $c-primary;
+  background: $c-bg-primary;
+  color: $c-primary-dark;
   filter: drop-shadow(rgba(122, 56, 85, 0.11)  0.3rem 0.5rem 2.1rem);
   font-size: $f-tooltip-size;
   line-height: $f-tooltip-lh;
-  color: $c-primary;
+  color: $c-primary-dark;
   font-style: italic;
 }
 
 .message{
-  height: 48rem;
+  min-height: 48rem;//mobile
   background: $c-bg-primary;
 }
 
@@ -18,8 +18,7 @@
   position: absolute;
   top:0;
   width:100%;
-  height: 31rem;
-  padding: 4.2rem 3.8rem;
+  padding: 4.2rem 3.8rem 5.5rem;
   border-radius: 6px;
   &:after{
     content: '';
@@ -28,8 +27,12 @@
     left: 50%;
     margin-left: -0.8rem;
     width: 0; height: 0;
-    border-top: 3rem solid $c-fg-primary;
+    border-top: 3rem solid $c-bg-primary;
     border-right: 1.7rem solid transparent;
     border-left: 1.7rem solid transparent;
   }
+}
+
+.message__person{
+  margin: 36.5rem auto 0;
 }
