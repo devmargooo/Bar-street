@@ -46,6 +46,9 @@
   line-height: $f-price-price-lh;
   text-align: left;
 }
+@mixin tabe-pane-top-theme{
+  background: $c-bg-primary;
+}
 
 .tabe-pane-inner{
   background: $c-fg-primary;
@@ -53,7 +56,7 @@
 }
 .tabe-pane-inner__title{
   @include tabe-pane-inner-title-theme;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 .tabe-pane-inner__description{
@@ -119,4 +122,9 @@
     color: $c-primary-dark;
     font-weight: bold;
   }
+}
+
+.tabe-pane-top{
+  @include tabe-pane-top-theme;
+  padding: 1.5rem;
 }

@@ -1,0 +1,15 @@
+@mixin label-theme{
+  display: inline-block;
+  background: $c-complementary;
+  color: $c-primary-light;
+  border-radius: $br-label;
+  font-size: $f-label-size;
+  line-height: $f-label-lh;
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.label{
+  @include label-theme;
+  margin-top: 4.5rem;
+}
