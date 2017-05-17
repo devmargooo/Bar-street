@@ -1,0 +1,15 @@
+@mixin carousel-title-theme{
+  color: $c-primary-dark;
+  font-size: $f-carousel-title-size;
+  line-height: $f-carousel-title-lh;
+  text-align: left;
+}
+
+.carousel{
+  text-align: center;
+}
+.carousel-title{
+  @include carousel-title-theme;
+  max-width: 25rem;//mobile
+  margin-bottom: 3rem;
+}
