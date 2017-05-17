@@ -1,5 +1,6 @@
 @mixin footer-theme{
   background: $c-fg-primary;
+  text-align: center;
 }
 @mixin footer-message-theme{
   background: $c-bg-primary;
@@ -10,8 +11,13 @@
 }
 .footer{
   @include footer-theme;
+  padding-bottom: 4rem;
 }
 .footer__message{
   @include footer-message-theme;
   padding: 8.3rem 2rem 10.3rem;
+}
+
+.footer__person{
+  margin-top: -4.5rem;
 }

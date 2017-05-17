@@ -10,7 +10,7 @@
 }
 
 .person{
-  width: 20rem;
+
 }
 .person__info{
   color: $c-primary-dark;
@@ -22,6 +22,7 @@
 
 .person__info_extended{
   @extend .person__info;
+  margin-top: 3rem;
 }
 
 .person__info-title{
@@ -32,6 +33,10 @@
 }
 .person__info-phone{
   @include person-info-theme;
+}
+.person__info-email{
+  @include person-info-theme;
+  color: $c-complementary;
 }
 .person__info-contacts{
   @include person-accent-theme;
