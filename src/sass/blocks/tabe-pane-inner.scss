@@ -23,6 +23,27 @@
   font-size: $f-menu-size;
   line-height: $f-menu-lh;
 }
+@mixin price-theme{
+  background: $c-fg-primary;
+}
+@mixin price-row-theme{
+  background: inherit;
+  vertical-align: baseline;
+}
+@mixin price-caption-cell-theme{
+  color: $c-secondary;
+  font-size: $f-price-caption-size;
+  line-height: $f-price-caption-lh;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+@mixin price-price-cell-theme{
+  color: $c-secondary;
+  font-size: $f-price-price-size;
+  line-height: $f-price-price-lh;
+  text-align: center;
+}
 
 .tabe-pane-inner{
   background: $c-bg-primary;
@@ -73,4 +94,23 @@
   max-width: 3rem;
   max-height: 3rem;
   margin: 0 auto;
+}
+
+.tabe-pane-inner__price{
+  @include price-theme;
+  width: 100%;
+}
+.tabe-pane-inner__price-cell{
+  &:nth-child(2n-1){//column 1
+    @include price-caption-cell-theme;
+  }
+  &:nth-child(2n){//column 2
+    @include price-price-cell-theme;
+    text-decoration: line-through;
+  }
+  &_finally{//finally price
+    @include price-price-cell-theme;
+    color: $c-primary-dark;
+    font-weight: bold;
+  }
 }
