@@ -1,3 +1,7 @@
+@mixin carousel-theme{
+  background: $c-fg-primary;
+}
+
 @mixin carousel-title-theme{
   color: $c-primary-dark;
   font-size: $f-carousel-title-size;
@@ -6,7 +10,9 @@
 }
 
 .carousel{
+  @include carousel-theme;
   text-align: center;
+  padding-bottom: 5rem;
 }
 .carousel-title{
   @include carousel-title-theme;

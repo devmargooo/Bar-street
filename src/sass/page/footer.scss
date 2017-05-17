@@ -1,0 +1,17 @@
+@mixin footer-theme{
+  background: $c-fg-primary;
+}
+@mixin footer-message-theme{
+  background: $c-bg-primary;
+  color: $c-primary-dark;
+  font-size: $f-footer-message-size;
+  line-height: $f-footer-message-lh;
+  font-style: italic;
+}
+.footer{
+  @include footer-theme;
+}
+.footer__message{
+  @include footer-message-theme;
+  padding: 8.3rem 2rem 10.3rem;
+}
