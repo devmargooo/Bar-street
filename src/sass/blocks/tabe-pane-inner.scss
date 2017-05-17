@@ -42,7 +42,7 @@
   color: $c-secondary;
   font-size: $f-price-price-size;
   line-height: $f-price-price-lh;
-  text-align: center;
+  text-align: left;
 }
 
 .tabe-pane-inner{
@@ -103,9 +103,11 @@
 .tabe-pane-inner__price-cell{
   &:nth-child(2n-1){//column 1
     @include price-caption-cell-theme;
+    width: 60%;
   }
   &:nth-child(2n){//column 2
     @include price-price-cell-theme;
+    width: 40%;
     text-decoration: line-through;
   }
   &_finally{//finally price

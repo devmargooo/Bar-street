@@ -1,0 +1,16 @@
+@mixin button-action-theme{
+  background: $c-complementary;
+  color: $c-primary-light;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.button-choose{
+  @include button-action-theme;
+  width: 100%;
+  margin-top: 1rem;
+  font-size: $f-button-choose-size;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
