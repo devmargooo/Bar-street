@@ -1,9 +1,11 @@
 @mixin tabe-pane-inner-title-theme{
+  background: $c-bg-primary;
   color: $c-primary-dark;
   font-size: $f-tab-pane-title-size;
   line-height: $f-tab-pane-title-lh;
 }
 @mixin tabe-pane-inner__description-theme{
+  background: $c-bg-primary;
   color: $c-primary-dark;
   font-size: $f-tab-pane-description-size;
   line-height: $f-tab-pane-description-lh;
@@ -24,7 +26,7 @@
   line-height: $f-menu-lh;
 }
 @mixin price-theme{
-  background: $c-fg-primary;
+  background: inherit;
 }
 @mixin price-row-theme{
   background: inherit;
@@ -46,11 +48,13 @@
 }
 
 .tabe-pane-inner{
-  background: $c-bg-primary;
+  background: $c-fg-primary;
+  padding-bottom: 3.8rem;
 }
 .tabe-pane-inner__title{
   @include tabe-pane-inner-title-theme;
   margin-top: 2.5rem;
+  margin-bottom: 0;
 }
 .tabe-pane-inner__description{
   @include tabe-pane-inner__description-theme;
