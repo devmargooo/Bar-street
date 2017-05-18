@@ -1,0 +1,43 @@
+@mixin carousel-big-caption-theme{
+  color: $c-primary-dark;
+  font-size: $f-carousel-caption-size;
+  line-height: $f-carousel-caption-lh;
+  text-align: left;
+}
+
+.carousel-big-item-wrapper{
+  float: left;
+  height: 100%;
+  &:first-child{
+    width: 41%;
+  }
+  &:last-child{
+    width: 59%;
+  }
+}
+
+.carousel-big-item{
+  display: block;
+  width: 300px;
+  margin-top: 10px;
+  float: left;
+}
+.carousel-big-item-img{
+  width: 293px;
+  height: 140px;
+}
+.carousel-big-item-caption, .carousel-big-item-extended-caption{
+  @include carousel-big-caption-theme;
+  height: 7rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-big-item-extended{
+  width: 100%;
+  float: right;
+}
+
+.carousel-big-item-extended-img{
+  width: 100%;
+}

@@ -27,10 +27,19 @@ function checkIfMediumCarouselIsShowing() {
     return document.querySelector(".carousel-medium");
 }
 function checkIfBigCarouselIsShowing() {
-    //return document.querySelector(".carousel-big").offsetWidth;
+    return document.querySelector(".carousel-big");
 }
 function showBigCarousel() {
-    
+    console.log("starting draw big carousel...");
+    var currentCarousel = document.querySelector('.csslider');
+    if (currentCarousel.offsetWidth == 0){
+        console.log('something bad happens :(');
+        return;
+    }
+    var parent = currentCarousel.parentNode;
+    parent.removeChild(currentCarousel);
+    var newCarousel = document.querySelector('.carousel-big-template');
+    parent.appendChild(document.importNode(newCarousel.content, true));
 }
 function showMediumCarousel() {
     console.log("starting draw medium carousel...");
