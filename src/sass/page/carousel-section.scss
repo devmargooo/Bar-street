@@ -16,6 +16,13 @@
 }
 .carousel-title{
   @include carousel-title-theme;
-  max-width: 25rem;//mobile
-  margin-bottom: 3rem;
+  width: 30rem;//mobile
+  margin: 0 auto 3rem;
+  @media (min-width: 768px) {
+    width: 60rem;
+    font-size: $f-carousel-title-bigger-size;
+  }
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
 }
