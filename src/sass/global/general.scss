@@ -54,10 +54,10 @@ html{
 .alternative-container-inner{
   position: relative;
   margin: 0 auto;
+  padding: 0;
   width: 100%;
   @media (min-width: 992px){
-    width: 970px;
-    padding: 0 15px;
+    width: 940px;
   }
 }
 

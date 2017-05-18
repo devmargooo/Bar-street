@@ -146,3 +146,10 @@
   @include tabe-pane-top-theme;
   padding: 1.5rem 0;
 }
+
+.price-decoration{
+  @media (min-width: 1200px){
+    padding-bottom: 5rem;
+  }
+  border-bottom: 1px solid $c-price-border;
+}
