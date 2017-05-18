@@ -1,6 +1,11 @@
 .logo{
   display: block;
-  width: 21rem;
-  height: 4rem;
-  margin: 4rem auto 0;
+  min-width: 21rem;
+  width: 47vw;
+  max-width: 33.5rem;
+  //height: 4rem;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }

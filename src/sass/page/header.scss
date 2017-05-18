@@ -1,6 +1,12 @@
 .header{
   min-height: 10rem;
-  padding: 1px;
+  height: 25vw;
+  max-height: 28rem;
+  padding-top: 4rem;
+  @media (min-width: 768px) {
+    padding-top: 6rem;
+    padding-left: 4rem;
+  }
   background: url("../img/backgrounds/headerimg.jpg");
   background-position-x: -500px;
 }
