@@ -9,14 +9,12 @@
 }
 
 .message{
-  min-height: 48rem;//mobile
   background: $c-bg-primary;
+  padding: 0.1px 0 1.5rem;
 }
 
 .message__tooltip{
   @include tooltip-theme;
-  position: absolute;
-  top:0;
   width:100%;
   padding: 4.2rem 3.8rem 5.5rem;
   border-radius: 6px;
@@ -34,6 +32,6 @@
 }
 
 .message__person{
-  margin: 36.5rem auto 0;
+  margin: 4.5rem auto 0;
   width: 20rem;
 }
