@@ -105,20 +105,38 @@
 
 .tabe-pane-inner__price{
   @include price-theme;
-  width: 100%;
+  width: 30rem;
+  margin: 0 auto;
+  @media (min-width: 992px) {
+    width: 25rem;
+    margin-left: 49.5rem;
+    float: left;
+  }
+}
+.tabe-pane-inner__price-row{
+  position: relative;
+  @media (min-width: 992px) {
+    width: 12rem;
+    display: inline-block;
+  }
 }
 .tabe-pane-inner__price-cell{
+  display: inline-block;
   &:nth-child(2n-1){//column 1
     @include price-caption-cell-theme;
     width: 60%;
+    @media (min-width: 992px) {
+      width: 100%;
+      line-height: 3.2rem;
+    }
   }
   &:nth-child(2n){//column 2
     @include price-price-cell-theme;
-    width: 40%;
     text-decoration: line-through;
   }
   &_finally{//finally price
     @include price-price-cell-theme;
+    display: inline-block;
     color: $c-primary-dark;
     font-weight: bold;
   }

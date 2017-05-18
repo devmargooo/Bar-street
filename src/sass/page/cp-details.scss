@@ -30,6 +30,12 @@
 .cp-details__title_more{
 
 }
+.cp-details__table-col{
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
 .cp-details__about-title{
   @include cp-title-theme;
   margin-top: 0;
@@ -37,6 +43,7 @@
 }
 .cp-details-about{
   width: 100%;
+  margin-bottom: 3rem;
 }
 
 .cp-details-about-cell{

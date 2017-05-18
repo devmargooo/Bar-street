@@ -9,11 +9,16 @@
 
 .button-choose{
   @include button-action-theme;
-  width: 100%;
-  margin-top: 1rem;
+  display: block;
+  width: 30rem;
+  margin: 1rem auto 0;
   font-size: $f-button-choose-size;
   padding-top: 1.3rem;
   padding-bottom: 1.3rem;
+  @media (min-width: 992px) {
+    width: 20rem;
+    float: left;
+  }
 }
 .button-answer{
   @include button-action-theme;

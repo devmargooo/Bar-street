@@ -22,16 +22,12 @@ html{
 .container-inner {
   position: relative;
   margin: 0 auto;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding: 0 15px;
   @media (min-width: 1700px) {
     width: 1600px;
-    margin: 0 auto;
   }
   @media (min-width: 1200px) {
-    margin-left: 4rem;
-    margin-right: 4rem;
-    width: auto;
+    width: 1170px;
   }
 
   @media (min-width: 992px) {
@@ -40,8 +36,6 @@ html{
 
   @media (min-width: 768px) {
     width: 750px;
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
   @media (min-width: 450px) {
     width: 440px;
@@ -52,6 +46,18 @@ html{
     width: 310px;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+}
+
+//Центровщик 2
+
+.alternative-container-inner{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  @media (min-width: 992px){
+    width: 970px;
+    padding: 0 11px;
   }
 }
 
