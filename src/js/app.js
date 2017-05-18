@@ -1,31 +1,87 @@
 var responsive = function(alias) {
-    console.log($('.responsive-' + alias).is(':visible'));
     return $('.responsive-' + alias).is(':visible');
 };
-var changeState = function() {
-    console.log("changeState");
+var changeTabsState = function() {
     if (!responsive('desktop')) {
         var tabs = $(".tab-pane");
-        console.log(tabs);
         for (var i = 0; i< tabs.length; i++){
             if(!tabs[i].classList.contains('active')){
-                console.log('add');
                     tabs[i].classList.add('active');
             }
         }
     }
     else{
-        console.log('removing');
         var tabs = $(".tab-pane");
-        console.log(tabs);
         for (var i = 1; i< tabs.length; i++){
             if(tabs[i].classList.contains('active')){
-                console.log('remove');
                 tabs[i].classList.remove('active');
             }
         }
     }
 };
 
-$(window).on('resize', changeState);
-$(document).ready(changeState);
+function checkIfSmallCarouselIsShowing() {
+    return document.querySelector(".carousel-small");
+}
+function checkIfMediumCarouselIsShowing() {
+    return document.querySelector(".carousel-medium");
+}
+function checkIfBigCarouselIsShowing() {
+    //return document.querySelector(".carousel-big").offsetWidth;
+}
+function showBigCarousel() {
+    
+}
+function showMediumCarousel() {
+    console.log("starting draw medium carousel...");
+    var currentCarousel = document.querySelector('.csslider');
+    if (currentCarousel.offsetWidth == 0){
+        console.log('something bad happens :(');
+        return;
+    }
+    var parent = currentCarousel.parentNode;
+    parent.removeChild(currentCarousel);
+    var newCarousel = document.querySelector('.carousel-medium-template');
+    parent.appendChild(document.importNode(newCarousel.content, true));
+}
+function showSmallCarousel() {
+    console.log("starting draw small carousel...");
+    var currentCarousel = document.querySelector('.csslider');
+    if (currentCarousel.offsetWidth == 0){
+        console.log('something bad happens :(');
+        return;
+    }
+    var parent = currentCarousel.parentNode;
+    parent.removeChild(currentCarousel);
+    var newCarousel = document.querySelector('.carousel-small-template');
+    parent.appendChild(document.importNode(newCarousel.content, true));
+}
+
+var changeCarouselState = function() {
+    if (responsive('desktop')){
+        if(!checkIfBigCarouselIsShowing()){
+            showBigCarousel();
+        }
+        return;
+    } else if (responsive('tablet-portret')){
+        if(!checkIfMediumCarouselIsShowing()){
+            showMediumCarousel();
+        }
+        return;
+    } else {
+        if(!checkIfSmallCarouselIsShowing()){
+            showSmallCarousel();
+        }
+    }
+}
+
+function init() {
+    /*console.log("small: " + !!checkIfSmallCarouselIsShowing());
+    console.log("medium: " + !!checkIfMediumCarouselIsShowing());
+    console.log("big: " + checkIfBigCarouselIsShowing());*/
+    changeTabsState();
+    changeCarouselState();
+}
+
+$(window).on('resize', init);
+$(document).ready(init);

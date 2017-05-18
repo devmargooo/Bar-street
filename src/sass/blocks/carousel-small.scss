@@ -1,31 +1,31 @@
-.csslider {
+.carousel-small {
   position: relative;
   display: inline-block;
   text-align: left;
   position: relative;
   margin-bottom: 22px;
 }
-.csslider > input {
+.carousel-small > input {
   display: none;
 }
 
-.csslider > input:nth-of-type(6):checked ~ ul li:first-of-type {
+.carousel-small > input:nth-of-type(6):checked ~ ul li:first-of-type {
   margin-top: -775%;
 }
-.csslider > input:nth-of-type(5):checked ~ ul li:first-of-type {
+.carousel-small > input:nth-of-type(5):checked ~ ul li:first-of-type {
   margin-top: -620%;
 }
-.csslider > input:nth-of-type(4):checked ~ ul li:first-of-type {
+.carousel-small > input:nth-of-type(4):checked ~ ul li:first-of-type {
   margin-top: -465%;
 }
-.csslider > input:nth-of-type(3):checked ~ ul li:first-of-type {
+.carousel-small > input:nth-of-type(3):checked ~ ul li:first-of-type {
   margin-top: -310%;
 }
-.csslider > input:nth-of-type(2):checked ~ ul li:first-of-type {
+.carousel-small > input:nth-of-type(2):checked ~ ul li:first-of-type {
   margin-top: -155%;
 }
 
-.csslider > ul {
+.carousel-small > ul {
   position: relative;
   width: 300px;
   height: 465px;
@@ -36,7 +36,7 @@
   white-space: nowrap;
 }
 
-.csslider > ul > li {
+.carousel-small > ul > li {
   position: relative;
   display: block;
   height: 100%;
@@ -50,10 +50,10 @@
   white-space: normal;
 }
 
-.csslider > ul > li.scrollable {
+.carousel-small > ul > li.scrollable {
   overflow-y: scroll;
 }
-.csslider > .navigation {
+.carousel-small > .navigation {
   position: absolute;
   bottom: -8px;
   left: 50%;
@@ -69,10 +69,10 @@
   -ms-user-select: none;
   user-select: none;
 }
-.csslider > .navigation > div {
+.carousel-small > .navigation > div {
   margin-left: -100%;
 }
-.csslider > .navigation label {
+.carousel-small > .navigation label {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -81,10 +81,10 @@
   padding: 4px;
   background: #3A3A3A;
 }
-.csslider > .navigation label:hover:after {
+.carousel-small > .navigation label:hover:after {
   opacity: 1;
 }
-.csslider > .navigation label:after {
+.carousel-small > .navigation label:after {
   content: '';
   position: absolute;
   left: 50%;
@@ -96,7 +96,7 @@
   padding: 6px;
   opacity: 0;
 }
-.csslider > .arrows {
+.carousel-small > .arrows {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -104,27 +104,27 @@
   -ms-user-select: none;
   user-select: none;
 }
-.csslider.inside .navigation {
+.carousel-small.inside .navigation {
   bottom: 10px;
   margin-bottom: 10px;
 }
-.csslider.inside .navigation label {
+.carousel-small.inside .navigation label {
   border: 1px solid #7e7e7e;
 }
-.csslider > input:nth-of-type(1):checked ~ .navigation label:nth-of-type(1):after,
-.csslider > input:nth-of-type(2):checked ~ .navigation label:nth-of-type(2):after,
-.csslider > input:nth-of-type(3):checked ~ .navigation label:nth-of-type(3):after,
-.csslider > input:nth-of-type(4):checked ~ .navigation label:nth-of-type(4):after,
-.csslider > input:nth-of-type(5):checked ~ .navigation label:nth-of-type(5):after,
-.csslider > input:nth-of-type(6):checked ~ .navigation label:nth-of-type(6):after,
-.csslider > input:nth-of-type(7):checked ~ .navigation label:nth-of-type(7):after,
-.csslider > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8):after,
-.csslider > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9):after,
-.csslider > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10):after,
-.csslider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11):after {
+.carousel-small > input:nth-of-type(1):checked ~ .navigation label:nth-of-type(1):after,
+.carousel-small > input:nth-of-type(2):checked ~ .navigation label:nth-of-type(2):after,
+.carousel-small > input:nth-of-type(3):checked ~ .navigation label:nth-of-type(3):after,
+.carousel-small > input:nth-of-type(4):checked ~ .navigation label:nth-of-type(4):after,
+.carousel-small > input:nth-of-type(5):checked ~ .navigation label:nth-of-type(5):after,
+.carousel-small > input:nth-of-type(6):checked ~ .navigation label:nth-of-type(6):after,
+.carousel-small > input:nth-of-type(7):checked ~ .navigation label:nth-of-type(7):after,
+.carousel-small > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8):after,
+.carousel-small > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9):after,
+.carousel-small > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10):after,
+.carousel-small > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11):after {
   opacity: 1;
 }
-.csslider > .arrows {
+.carousel-small > .arrows {
   position: absolute;
   height: 26px;
   padding: 0 31px;
@@ -135,7 +135,7 @@
   top: 15px;
   left: calc(50% - 15px);
 }
-.csslider > .arrows label {
+.carousel-small > .arrows label {
   display: none;
   position: absolute;
   width: 2.9rem;
@@ -146,11 +146,11 @@
   cursor: pointer;
   background: black;
 }
-.csslider > .arrows label:hover {
+.carousel-small > .arrows label:hover {
 
   margin: 0 0px;
 }
-.csslider > .arrows label:before {
+.carousel-small > .arrows label:before {
   content: '';
   position: absolute;
   top: -100%;
@@ -158,34 +158,34 @@
   height: 300%;
   width: 300%;
 }
-.csslider.infinity > input:first-of-type:checked ~ .arrows label.goto-last,
-.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(0),
-.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(1),
-.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(2),
-.csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(3),
-.csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(4),
-.csslider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(5),
-.csslider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(6),
-.csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(7),
-.csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(8),
-.csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(9),
-.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(10) {
+.carousel-small.infinity > input:first-of-type:checked ~ .arrows label.goto-last,
+.carousel-small > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(0),
+.carousel-small > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(1),
+.carousel-small > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(2),
+.carousel-small > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(3),
+.carousel-small > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(4),
+.carousel-small > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(5),
+.carousel-small > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(6),
+.carousel-small > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(7),
+.carousel-small > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(8),
+.carousel-small > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(9),
+.carousel-small > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(10) {
   display: block;
   left: 0;
   right: auto;
 }
-.csslider.infinity > input:last-of-type:checked ~ .arrows label.goto-first,
-.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(2),
-.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(3),
-.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(4),
-.csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(5),
-.csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(6),
-.csslider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(7),
-.csslider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(8),
-.csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(9),
-.csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(10),
-.csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(11),
-.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(12) {
+.carousel-small.infinity > input:last-of-type:checked ~ .arrows label.goto-first,
+.carousel-small > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(2),
+.carousel-small > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(3),
+.carousel-small > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(4),
+.carousel-small > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(5),
+.carousel-small > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(6),
+.carousel-small > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(7),
+.carousel-small > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(8),
+.carousel-small > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(9),
+.carousel-small > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(10),
+.carousel-small > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(11),
+.carousel-small > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(12) {
   display: block;
   top: 510px;
   left: 0;

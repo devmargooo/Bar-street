@@ -79,7 +79,7 @@ html{
   float: right;
 }
 
-//Check tabs options
+//Measurements
 
 .responsive{
   display: none;
@@ -87,6 +87,12 @@ html{
 .responsive-desktop{
   display: none;
   @media (min-width: 1200px) {
+    display: block;
+  }
+}
+.responsive-tablet-portret{
+  display: none;
+  @media (min-width: 768px) {
     display: block;
   }
 }
@@ -98,7 +104,7 @@ html{
 }
 
 
-//Frid
+//Grid
 
 .first-col{
   padding-left: 0;

@@ -250,17 +250,19 @@
                           </tr>
                       </table>
                       <div class="container-inner">
-                          <table class="tabe-pane-inner__price">
-                              <tr class="tabe-pane-inner__price-row">
-                                  <td class="tabe-pane-inner__price-cell">Цена без скидки</td>
-                                  <td class="tabe-pane-inner__price-cell">190 990</td>
-                              </tr>
-                              <tr class="tabe-pane-inner__price-row">
-                                  <td class="tabe-pane-inner__price-cell">Стоимость</td>
-                                  <td class="tabe-pane-inner__price-cell_finally">110 000 <span class="rubles">₽</span></td>
-                              </tr>
-                          </table>
-                          <button class="button-choose">Выбрать</button>
+                          <div class="alternative-container-inner clearfix">
+                              <div class="tabe-pane-inner__price">
+                                  <div class="tabe-pane-inner__price-row">
+                                      <div class="tabe-pane-inner__price-cell">Цена без скидки</div>
+                                      <div class="tabe-pane-inner__price-cell">190 990</div>
+                                  </div>
+                                  <div class="tabe-pane-inner__price-row">
+                                      <div class="tabe-pane-inner__price-cell">Стоимость</div>
+                                      <div class="tabe-pane-inner__price-cell_finally">110 000 <span class="rubles">₽</span></div>
+                                  </div>
+                              </div>
+                              <button class="button-choose">Выбрать</button>
+                          </div>
                       </div>
                   </div>
               </div>
@@ -327,17 +329,19 @@
                           </tr>
                       </table>
                       <div class="container-inner">
-                          <table class="tabe-pane-inner__price">
-                              <tr class="tabe-pane-inner__price-row">
-                                  <td class="tabe-pane-inner__price-cell">Цена без скидки</td>
-                                  <td class="tabe-pane-inner__price-cell">290 990</td>
-                              </tr>
-                              <tr class="tabe-pane-inner__price-row">
-                                  <td class="tabe-pane-inner__price-cell">Стоимость</td>
-                                  <td class="tabe-pane-inner__price-cell_finally">210 000 <span class="rubles">₽</span></td>
-                              </tr>
-                          </table>
-                          <button class="button-choose">Выбрать</button>
+                          <div class="alternative-container-inner clearfix">
+                              <div class="tabe-pane-inner__price">
+                                  <div class="tabe-pane-inner__price-row">
+                                      <div class="tabe-pane-inner__price-cell">Цена без скидки</div>
+                                      <div class="tabe-pane-inner__price-cell">189 990</div>
+                                  </div>
+                                  <div class="tabe-pane-inner__price-row">
+                                      <div class="tabe-pane-inner__price-cell">Стоимость</div>
+                                      <div class="tabe-pane-inner__price-cell_finally">180 000 <span class="rubles">₽</span></div>
+                                  </div>
+                              </div>
+                              <button class="button-choose">Выбрать</button>
+                          </div>
                       </div>
                   </div>
               </div>
@@ -347,9 +351,9 @@
       <section class="carousel">
           <div class="container-inner">
               <h2 class="carousel-title">Фотографии с&nbsp;аналогичных баров</h2>
-              <div class="csslider infinity">
-                  <input type="radio" name="slides" id="slides_1"/>
-                  <input type="radio" name="slides" checked="checked" id="slides_2"/>
+              <div class="csslider infinity carousel-small">
+                  <input type="radio" name="slides" checked="checked" id="slides_1"/>
+                  <input type="radio" name="slides" id="slides_2"/>
                   <input type="radio" name="slides" id="slides_3"/>
                   <input type="radio" name="slides" id="slides_4"/>
                   <input type="radio" name="slides" id="slides_5"/>
@@ -480,6 +484,217 @@
       <button class="button-answer" type="button">Написать ответ</button>
   </footer>
   <div class="responsive responsive-desktop"></div>
+  <div class="responsive responsive-tablet-portret"></div>
+  <template class="carousel-small-template">
+      <div class="csslider infinity carousel-small">
+          <input type="radio" name="slides" checked="checked" id="slides_1"/>
+          <input type="radio" name="slides" id="slides_2"/>
+          <input type="radio" name="slides" id="slides_3"/>
+          <input type="radio" name="slides" id="slides_4"/>
+          <input type="radio" name="slides" id="slides_5"/>
+          <input type="radio" name="slides" id="slides_6"/>
+          <ul>
+              <li>
+                  <div class="carousel-small-item">
+                      <img src="img/slides/img1.jpg">
+                      <p class="carousel-small-item-caption">
+                          Вот такие тёлки поставляются к бару, бармен наливает им афродизиаки…
+                      </p>
+                  </div>
+                  <div class="carousel-small-item">
+                      <img src="img/slides/img2.jpg">
+                      <p class="carousel-small-item-caption">
+                          Привезём с собой вкусyые и красивые закуски
+                      </p>
+                  </div>
+              </li>
+              <li>
+                  <div class="carousel-small-item">
+                      <img src="img/slides/img3.jpg">
+                      <p class="carousel-small-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+                  <div class="carousel-small-item">
+                      <img src="img/slides/img4.jpg">
+                      <p class="carousel-small-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+              </li>
+              <li>
+                  <div class="carousel-small-item">
+                      <img src="img/slides/img5.jpg">
+                      <p class="carousel-small-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+                  <div class="carousel-small-item">
+                      <img src="img/slides/img6.jpg">
+                      <p class="carousel-small-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+              </li>
+              <li>
+                  <div class="carousel-small-item">
+                      <img src="img/slides/img7.jpg">
+                      <p class="carousel-small-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+                  <div class="carousel-small-item">
+                      <img src="img/slides/img8.jpg">
+                      <p class="carousel-small-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+              </li>
+              <li>
+                  <div class="carousel-small-item">
+                      <img src="img/slides/img9.jpg">
+                      <p class="carousel-small-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+                  <div class="carousel-small-item">
+                      <img src="img/slides/img10.jpg">
+                      <p class="carousel-small-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+              </li>
+              <li>
+                  <div class="carousel-small-item">
+                      <img src="img/slides/img11.jpg">
+                      <p class="carousel-small-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+                  <div class="carousel-small-item">
+                      <img src="img/slides/img12.jpg">
+                      <p class="carousel-small-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+              </li>
+          </ul>
+          <div class="arrows">
+              <label for="slides_1"></label>
+              <label for="slides_2"></label>
+              <label for="slides_3"></label>
+              <label for="slides_4"></label>
+              <label for="slides_5"></label>
+              <label for="slides_6"></label>
+              <label class="goto-first" for="slides_1"></label>
+              <label class="goto-last" for="slides_6"></label>
+          </div>
+      </div>
+  </template>
+  <template class="carousel-medium-template">
+      <div class="csslider infinity carousel-medium">
+          <input type="radio" name="slides" checked="checked" id="slides_1"/>
+          <input type="radio" name="slides" id="slides_2"/>
+          <input type="radio" name="slides" id="slides_3"/>
+          <ul>
+              <li>
+                  <div class="carousel-medium-item">
+                      <img src="img/slides/img1.jpg">
+                      <p class="carousel-medium-item-caption">
+                          Вот такие тёлки поставляются к бару, бармен наливает им афродизиаки…
+                      </p>
+                  </div>
+                  <div class="carousel-medium-item">
+                      <img src="img/slides/img2.jpg">
+                      <p class="carousel-medium-item-caption">
+                          Привезём с собой вкусyые и красивые закуски
+                      </p>
+                  </div>
+                  <div class="carousel-medium-item">
+                      <img src="img/slides/img3.jpg">
+                      <p class="carousel-medium-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+                  <div class="carousel-medium-item">
+                      <img src="img/slides/img4.jpg">
+                      <p class="carousel-medium-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+              </li>
+              <li>
+                  <div class="carousel-medium-item">
+                      <img src="img/slides/img5.jpg">
+                      <p class="carousel-medium-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+                  <div class="carousel-medium-item">
+                      <img src="img/slides/img6.jpg">
+                      <p class="carousel-medium-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+                  <div class="carousel-medium-item">
+                      <img src="img/slides/img7.jpg">
+                      <p class="carousel-medium-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+                  <div class="carousel-medium-item">
+                      <img src="img/slides/img8.jpg">
+                      <p class="carousel-medium-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+              </li>
+              <li>
+                  <div class="carousel-medium-item">
+                      <img src="img/slides/img9.jpg">
+                      <p class="carousel-medium-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+                  <div class="carousel-medium-item">
+                      <img src="img/slides/img10.jpg">
+                      <p class="carousel-medium-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+                  <div class="carousel-medium-item">
+                      <img src="img/slides/img11.jpg">
+                      <p class="carousel-medium-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+                  <div class="carousel-medium-item">
+                      <img src="img/slides/img12.jpg">
+                      <p class="carousel-medium-item-caption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                  </div>
+              </li>
+          </ul>
+          <div class="arrows">
+              <label for="slides_1"></label>
+              <label for="slides_2"></label>
+              <label for="slides_3"></label>
+              <label class="goto-first" for="slides_1"></label>
+              <label class="goto-last" for="slides_3"></label>
+          </div>
+      </div>
+  </template>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
