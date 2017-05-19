@@ -7,6 +7,9 @@
   font-weight: bold;
   text-align: left;
   line-height: $f-button-feature-lh;
+  &:hover, &:active, &:focus{
+    color: $c-hover;
+  }
 }
 
 .button-feature{
@@ -33,7 +36,7 @@
 .button-feature_excel{
   @extend .button-feature;
   &::after {
-    //@include sprite(exel);
+    @include sprite(exel);
   }
   &:hover, &:focus {
     &::after {
@@ -43,7 +46,7 @@
 .button-feature_callback{
   @extend .button-feature;
   &::after {
-   // @include sprite(comments);
+    @include sprite(comment);
   }
   &:hover, &:focus {
     &::after {

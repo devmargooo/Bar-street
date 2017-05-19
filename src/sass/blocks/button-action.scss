@@ -5,6 +5,9 @@
   vertical-align: middle;
   text-transform: uppercase;
   font-weight: bold;
+  &:hover, &:active, &:focus{
+    background: $c-hover;
+  }
 }
 
 .button-choose{

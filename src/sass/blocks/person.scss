@@ -37,6 +37,9 @@
 .person__info-email{
   @include person-info-theme;
   color: $c-complementary;
+  &:hover, &:focus, &:active{
+    color: $c-hover;
+  }
 }
 .person__info-contacts{
   @include person-accent-theme;
@@ -52,6 +55,9 @@
   }
   &:last-child{
     margin-right: 0;
+  }
+  &:hover, &:focus, &:active{
+    color: $c-hover;
   }
 }
 

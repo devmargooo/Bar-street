@@ -1,6 +1,6 @@
 //Bootstrap tabs customization
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus{
+.nav-tabs>li.active>a{
   width: 26rem;
   height: 12rem;
   background: $c-fg-primary;
@@ -8,8 +8,13 @@
   padding: 4.5rem 3.5rem 1rem;
 }
 
-.nav-tabs > li > a:hover{
+.nav-tabs > li.active > a:hover{
+  background: $c-fg-primary;
+}
+
+.nav-tabs > li> a:hover{
   background: $c-bg-primary;
+  box-shadow: rgba(138, 138, 138,.41) .3rem .5rem 3.1rem;
 }
 
 .nav-tabs>li>a{

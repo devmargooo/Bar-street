@@ -133,13 +133,20 @@
 .carousel-big > .arrows label {
   display: none;
   position: absolute;
-  width: 2.9rem;
+  width: 2.5rem;
   height: 2.5rem;
   border-radius: 5px;
   top: -50%;
   padding: 13px;
   cursor: pointer;
-  background: black;
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1.2rem);
+    font-size: 1.5rem;
+    left: 0;
+    top: 0;
+  }
 }
 .carousel-big > .arrows label:hover {
 
@@ -165,8 +172,8 @@
   top: -40px;
   left: 410px;
   right: auto;
-  &:hover{
-    background: yellow;
+  &::after {
+    @include sprite(arrow-leftpink);
   }
 }
 .carousel-big.infinity > input:last-of-type:checked ~ .arrows label.goto-first,
@@ -184,8 +191,8 @@
   display: block;
   top: -40px;
   left: 445px;
-  &:hover{
-    background: yellow;
+  &::after {
+    @include sprite(arrow-rightpink);
   }
 }
 
