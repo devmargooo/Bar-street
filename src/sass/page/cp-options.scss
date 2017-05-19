@@ -10,6 +10,9 @@
 .cp-options__title {
   @include cp-options-title;
   margin-top: 2.5rem;
+  @media (min-width: 1200px) {
+    margin-bottom: 4rem;
+  }
 }
 
 .cp-options__tabs{

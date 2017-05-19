@@ -4,7 +4,7 @@ html{
 
 .body-page {
   min-width: 320px;
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
   font-family: $f-primary;
@@ -23,7 +23,9 @@ html{
   position: relative;
   margin: 0 auto;
   padding: 0 15px;
-  width: 1200px;
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
   @media (min-width: 992px) {
     width: 970px;
   }

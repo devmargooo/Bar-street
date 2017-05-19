@@ -1,12 +1,36 @@
 //Bootstrap tabs customization
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus{
   width: 26rem;
   height: 12rem;
   background: $c-fg-primary;
-  box-shadow: rgba(138, 138, 138,.81) .3rem .5rem 3.1rem
+  box-shadow: rgba(138, 138, 138,.81) .3rem .5rem 3.1rem;
+  padding: 4.5rem 3.5rem 1rem;
+}
+
+.nav-tabs > li > a:hover{
+  background: $c-bg-primary;
+}
+
+.nav-tabs>li>a{
+  position: relative;
+  width: 26rem;
+  height: 12rem;
+  padding: 4.5rem 3.5rem 1rem;
+  box-shadow: rgba(138, 138, 138,.21) .3rem .5rem 3.1rem;
+  text-align: left;
+  color: $c-accent-dark!important;
+  font-size: $f-tabs-link-size!important;
+  line-height: $f-tabs-link-lh!important;
 }
 
 .nav-tabs>li{
-  margin-left: 8rem;
+  margin-left: 3rem;
+  &:first-child{
+    margin-left: 8rem;
+  }
+}
+
+.nav-tabs{
+  border-bottom: 0;
 }

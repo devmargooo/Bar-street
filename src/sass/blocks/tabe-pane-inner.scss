@@ -153,6 +153,6 @@
 .price-decoration{
   @media (min-width: 1200px){
     padding-bottom: 5rem;
+    border-bottom: 1px solid $c-price-border;
   }
-  border-bottom: 1px solid $c-price-border;
 }

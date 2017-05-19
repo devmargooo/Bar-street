@@ -13,3 +13,8 @@
   @include label-theme;
   margin-top: 4.5rem;
 }
+.label_top{
+  @include label-theme;
+  position: absolute;
+  top: 2rem;
+}
