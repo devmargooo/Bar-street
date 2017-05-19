@@ -39,9 +39,18 @@ button {
   }
 }
 
-a, a:hover, a:visited, a:focus, a:active{
+a {
   color: inherit;
   text-decoration: none;
+  &:hover,
+  &:visited,
+  &:focus{
+    text-decoration: none;
+  }
+  &:focus{
+    
+  }
+  @extend .link-animated;
 }
 
 input {

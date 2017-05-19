@@ -108,3 +108,12 @@ html{
 .last-col{
   padding-right: 0;
 }
+
+//Анимация переходов
+
+.link-animated{
+  transition: all 0.4s ease;
+  &:active {
+    opacity: 0.5;
+  }
+}
