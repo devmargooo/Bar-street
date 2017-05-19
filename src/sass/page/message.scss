@@ -31,6 +31,7 @@
     border-left: 1.7rem solid transparent;
   }
   @media (min-width: 1200px){
+    float: left;
     width: 81rem;
     top: -4rem;
     left: 6rem;
@@ -50,4 +51,15 @@
 .message__person{
   margin: 4.5rem auto 0;
   width: 20rem;
+  @media (min-width: 1200px){
+    float: right;
+    margin-right: 17rem;
+    margin-top: 2.5rem;
+  }
+}
+
+.message__person-info-contacts{
+  @media (min-width: 1200px){
+    display: none;
+  }
 }
