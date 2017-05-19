@@ -1,6 +1,6 @@
 @mixin tab-pane-inner-title-theme{
   background: inherit;
-  color: $c-primary-dark;
+  color: $c-accent-dark;
   font-size: $f-tab-pane-title-size;
   line-height: $f-tab-pane-title-lh;
 }
@@ -58,6 +58,9 @@
   @include tab-pane-inner-title-theme;
   margin-top: 1rem;
   margin-bottom: 0;
+  @media (min-width: 1200px) {
+    font-size: $f-tab-pane-title-size-desktop;
+  }
 }
 .tab-pane-inner__description{
   @include tab-pane-inner__description-theme;

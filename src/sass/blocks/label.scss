@@ -9,9 +9,12 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.label{
+.label_inside{
   @include label-theme;
   margin-top: 4.5rem;
+  @media (min-width: 1200px) {
+    display: none;
+  }
 }
 .label_top{
   @include label-theme;
