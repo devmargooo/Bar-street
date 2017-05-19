@@ -16,7 +16,7 @@
 }
 @mixin menu-row-theme{
   background: inherit;
-  &:nth-child(2n) {
+  &:nth-child(2n-1) {
     background: $c-bg-primary;
   }
   vertical-align: middle;
@@ -140,6 +140,9 @@
 }
 .tab-pane-inner__menu-row-heading{
   @include menu-row-heading-theme;
+  @media (max-width: 1199px){
+    display: none;
+  }
 }
 .tab-pane-inner__menu-header-cell{
   &:nth-child(5n-2), &:nth-child(5n-1){//column 3,4
@@ -163,15 +166,6 @@
   &:first-child {
     .tab-pane-inner__menu-cell{
       padding-top: 4rem;
-    }
-  }
-  @media (min-width: 1200px){
-    font-size: $f-menu-size-desktop;
-    &:nth-child(2n-1) {
-      background: $c-bg-primary;
-    }
-    &:nth-child(2n) {
-      background: $c-fg-primary;
     }
   }
 }
