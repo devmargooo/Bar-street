@@ -16,7 +16,7 @@
 }
 @mixin menu-row-theme{
   background: inherit;
-  &:nth-child(even) {
+  &:nth-child(2n) {
     background: $c-bg-primary;
   }
   vertical-align: middle;
@@ -24,6 +24,15 @@
   color: $c-primary-dark;
   font-size: $f-menu-size;
   line-height: $f-menu-lh;
+}
+@mixin menu-row-heading-theme{
+  color: $c-secondary;
+  font-weight: bold;
+  vertical-align: middle;
+  font-size: $f-menu-heading;
+  line-height: $f-menu-heading-lh;
+  text-align: left;
+  text-transform: uppercase;
 }
 @mixin price-theme{
   background: inherit;
@@ -66,12 +75,32 @@
   @include tab-pane-inner__description-theme;
   position: relative;
   padding: 2.8rem 6.4rem 3rem 0;
+  @media (min-width: 1200px) {
+    padding-left: 2rem;
+    border-radius: 6px;
+    &:after{
+      content: '';
+      position: absolute;
+      top: 45%;
+      right: 100%;
+      margin-top: -8px;
+      width: 0; height: 0;
+      border-right: 1.6rem solid $c-bg-primary;
+      border-top: 1.4rem solid transparent;
+      border-bottom: 1.4rem solid transparent;
+    }
+  }
 }
 .tab-pane-inner__description-photo{
   position: absolute;
   right: 1rem;
-  bottom: -2.5rem;
+  bottom: -1.3rem;
   z-index: 5;
+  @media (min-width: 1200px) {
+    left: -5rem;
+    top: calc(50% - 1.3rem);
+    right: auto;
+  }
 }
 .tab-pane-inner__menu{
   @include menu-theme;
@@ -80,17 +109,53 @@
 .tab-pane-inner__menu-cell{
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
-  &:nth-child(4n-3){//column 1
+  &:nth-child(5n-4){//column 1 (image)
     width: 4.2rem;
     text-align: center;
   }
-  &:nth-child(4n-2){
+  &:nth-child(5n-3){
     padding-right: 1.6rem;//column2
   }
-  &:nth-child(4n){//column 4
+  &:nth-child(5n-2), &:nth-child(5n-1){//column 3,4
+    @media (min-width: 1200px){
+      padding-left: 8rem;
+      padding-right: 8rem;
+      text-align: center;
+    }
+  }
+  &:nth-child(5n-1){//column 4
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+  &:nth-child(5n){//column 5
     padding-left: 1.7rem;
     padding-right: 1.7rem;
     font-weight: bold;
+    @media (min-width: 1200px){
+      text-align: right;
+      padding-right: 3rem;
+    }
+  }
+}
+.tab-pane-inner__menu-row-heading{
+  @include menu-row-heading-theme;
+}
+.tab-pane-inner__menu-header-cell{
+  &:nth-child(5n-2), &:nth-child(5n-1){//column 3,4
+    @media (min-width: 1200px){
+      padding-left: 8rem;
+      padding-right: 8rem;
+      text-align: center;
+    }
+  }
+  &:nth-child(5n){//column 5
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    @media (min-width: 1200px){
+      text-align: right;
+      padding-right: 3rem;
+    }
   }
 }
 .tab-pane-inner__menu-row{
@@ -98,6 +163,15 @@
   &:first-child {
     .tab-pane-inner__menu-cell{
       padding-top: 4rem;
+    }
+  }
+  @media (min-width: 1200px){
+    font-size: $f-menu-size-desktop;
+    &:nth-child(2n-1) {
+      background: $c-bg-primary;
+    }
+    &:nth-child(2n) {
+      background: $c-fg-primary;
     }
   }
 }
@@ -160,3 +234,4 @@
     border-bottom: 1px solid $c-price-border;
   }
 }
+
