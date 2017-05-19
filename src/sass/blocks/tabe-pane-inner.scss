@@ -1,10 +1,10 @@
-@mixin tabe-pane-inner-title-theme{
-  background: $c-bg-primary;
+@mixin tab-pane-inner-title-theme{
+  background: inherit;
   color: $c-primary-dark;
   font-size: $f-tab-pane-title-size;
   line-height: $f-tab-pane-title-lh;
 }
-@mixin tabe-pane-inner__description-theme{
+@mixin tab-pane-inner__description-theme{
   background: $c-bg-primary;
   color: $c-primary-dark;
   font-size: $f-tab-pane-description-size;
@@ -46,34 +46,34 @@
   line-height: $f-price-price-lh;
   text-align: left;
 }
-@mixin tabe-pane-top-theme{
+@mixin tab-pane-top-theme{
   background: $c-bg-primary;
 }
 
-.tabe-pane-inner{
+.tab-pane-inner{
   background: $c-fg-primary;
   padding-bottom: 3.8rem;
 }
-.tabe-pane-inner__title{
-  @include tabe-pane-inner-title-theme;
+.tab-pane-inner__title{
+  @include tab-pane-inner-title-theme;
   margin-top: 1rem;
   margin-bottom: 0;
 }
-.tabe-pane-inner__description{
-  @include tabe-pane-inner__description-theme;
+.tab-pane-inner__description{
+  @include tab-pane-inner__description-theme;
   position: relative;
   padding: 2.8rem 6.4rem 3rem 0;
 }
-.tabe-pane-inner__description-phone{
+.tab-pane-inner__description-phone{
   position: absolute;
   right: 1rem;
   bottom: -0.5rem;
 }
-.tabe-pane-inner__menu{
+.tab-pane-inner__menu{
   @include menu-theme;
   width: 100%;
 }
-.tabe-pane-inner__menu-cell{
+.tab-pane-inner__menu-cell{
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
   &:nth-child(4n-3){//column 1
@@ -89,21 +89,21 @@
     font-weight: bold;
   }
 }
-.tabe-pane-inner__menu-row{
+.tab-pane-inner__menu-row{
   @include menu-row-theme;
   &:first-child {
-    .tabe-pane-inner__menu-cell{
+    .tab-pane-inner__menu-cell{
       padding-top: 4rem;
     }
   }
 }
-.tabe-pane-inner__menu-img{
+.tab-pane-inner__menu-img{
   max-width: 3rem;
   max-height: 3rem;
   margin: 0 auto;
 }
 
-.tabe-pane-inner__price{
+.tab-pane-inner__price{
   @include price-theme;
   width: 30rem;
   margin: 0 auto;
@@ -113,14 +113,14 @@
     float: left;
   }
 }
-.tabe-pane-inner__price-row{
+.tab-pane-inner__price-row{
   position: relative;
   @media (min-width: 992px) {
     width: 12rem;
     display: inline-block;
   }
 }
-.tabe-pane-inner__price-cell{
+.tab-pane-inner__price-cell{
   display: inline-block;
   &:nth-child(2n-1){//column 1
     @include price-caption-cell-theme;
@@ -142,9 +142,12 @@
   }
 }
 
-.tabe-pane-top{
-  @include tabe-pane-top-theme;
+.tab-pane-top{
+  @include tab-pane-top-theme;
   padding: 1.5rem 0;
+  @media (min-width: 1200px){
+    background: $c-fg-primary;
+  }
 }
 
 .price-decoration{

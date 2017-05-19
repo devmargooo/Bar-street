@@ -11,10 +11,42 @@
 
 .button-feature{
   @include button-feature-theme;
+  position: relative;
   display: block;
   min-height: 7.2rem;
   width: 100%;
   max-width: 30rem;
   padding: 1.6rem 1rem 1rem 6.8rem;
   margin: 0 auto 1.8rem;
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1.2rem);
+    left: 2.2rem;
+    font-size: 1.5rem;
+  }
+  &:hover, &:focus {
+    &::after {
+    }
+  }
+}
+.button-feature_excel{
+  @extend .button-feature;
+  &::after {
+    //@include sprite(exel);
+  }
+  &:hover, &:focus {
+    &::after {
+    }
+  }
+}
+.button-feature_callback{
+  @extend .button-feature;
+  &::after {
+   // @include sprite(comments);
+  }
+  &:hover, &:focus {
+    &::after {
+    }
+  }
 }

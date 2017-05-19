@@ -1,0 +1,12 @@
+//Bootstrap tabs customization
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  width: 26rem;
+  height: 12rem;
+  background: $c-fg-primary;
+  box-shadow: rgba(138, 138, 138,.81) .3rem .5rem 3.1rem
+}
+
+.nav-tabs>li{
+  margin-left: 8rem;
+}
