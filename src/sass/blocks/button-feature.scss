@@ -9,6 +9,7 @@
   line-height: $f-button-feature-lh;
   &:hover, &:active, &:focus{
     color: $c-hover;
+    border: $b-button-feature solid  $c-hover;
   }
 }
 
@@ -28,10 +29,6 @@
     left: 2.2rem;
     font-size: 1.5rem;
   }
-  &:hover, &:focus {
-    &::after {
-    }
-  }
 }
 .button-feature_excel{
   @extend .button-feature;
@@ -40,6 +37,7 @@
   }
   &:hover, &:focus {
     &::after {
+      @include sprite(exel_);
     }
   }
 }
@@ -50,6 +48,7 @@
   }
   &:hover, &:focus {
     &::after {
+      @include sprite(comment_);
     }
   }
 }
