@@ -5,7 +5,7 @@
   line-height: $f-tab-pane-title-lh;
 }
 @mixin tab-pane-inner__description-theme{
-  background: $c-bg-primary;
+  background: inherit;
   color: $c-primary-dark;
   font-size: $f-tab-pane-description-size;
   line-height: $f-tab-pane-description-lh;
@@ -76,6 +76,7 @@
   position: relative;
   padding: 2.8rem 6.4rem 3rem 0;
   @media (min-width: 1200px) {
+    background: linear-gradient(to right, #ffffff, #f8f8f8);;
     padding-left: 2rem;
     border-radius: 6px;
     &:after{
@@ -216,6 +217,7 @@
 
 .tab-pane-top{
   @include tab-pane-top-theme;
+  background: linear-gradient(to right, #ffffff, #f8f8f8);
   padding: 1.5rem 0;
   @media (min-width: 1200px){
     background: $c-fg-primary;
