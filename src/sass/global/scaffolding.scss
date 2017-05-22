@@ -37,9 +37,6 @@ button {
   &:active{
     outline: none;
   }
-  &:active{
-    opacity: 0.3;
-  }
   @extend .link-animated;
 }
 
