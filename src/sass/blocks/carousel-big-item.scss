@@ -26,10 +26,17 @@
   width: 293px;
   height: 140px;
 }
-.carousel-big-item-caption, .carousel-big-item-extended-caption{
+.carousel-big-item-caption{
   @include carousel-big-caption-theme;
   height: 7rem;
   margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-big-item-extended-caption{
+  @include carousel-big-caption-theme;
+  height: 7rem;
+  margin-top: 4.5rem;
   margin-bottom: 1.5rem;
 }
 
