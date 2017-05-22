@@ -1,3 +1,15 @@
+var popup = document.querySelector(".callback-form-popup");
+
+function showCallbackForm() {
+    popup.hidden = false;
+}
+popup.onclick = function(e) {
+    var target = e.target;
+    if (target.classList.contains("callback-form-popup") || target.classList.contains("callback-form__close")){
+        popup.hidden = true;
+    }
+}
+
 var responsive = function(alias) {
     return $('.responsive-' + alias).is(':visible');
 };

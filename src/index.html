@@ -524,8 +524,8 @@
               <a class="person__info-contact" href="#">telegram</a>
           </div>
       </div>
-      <button class="button-answer" type="button">Написать ответ</button>
-      <div class="popup">
+      <button class="button-answer" type="button" onclick="showCallbackForm()">Написать ответ</button>
+      <div class="popup callback-form-popup" hidden onclick="hideCallbackForm()">
           <form class="callback-form">
               <h2>Обратная связь</h2>
               <input type="text" class="callback-form__input" placeholder="Имя">
@@ -533,7 +533,7 @@
               <input type="tel" class="callback-form__input" placeholder="Телефон">
               <button type="submit" class="callback-form__button">Перезвонить</button>
           </form>
-          <button class="callback-form__close" type="button" onclick="hideCallbackForm()">Закрыть</button>
+          <button class="callback-form__close" type="button">Закрыть</button>
       </div>
   </footer>
   <div class="responsive responsive-desktop"></div>
