@@ -42,7 +42,6 @@ function checkIfBigCarouselIsShowing() {
     return document.querySelector(".carousel-big");
 }
 function showBigCarousel() {
-    console.log("starting draw big carousel...");
     var currentCarousel = document.querySelector('.csslider');
     if (currentCarousel.offsetWidth == 0){
         console.log('something bad happens :(');
@@ -54,7 +53,6 @@ function showBigCarousel() {
     parent.appendChild(document.importNode(newCarousel.content, true));
 }
 function showMediumCarousel() {
-    console.log("starting draw medium carousel...");
     var currentCarousel = document.querySelector('.csslider');
     if (currentCarousel.offsetWidth == 0){
         console.log('something bad happens :(');
@@ -66,7 +64,6 @@ function showMediumCarousel() {
     parent.appendChild(document.importNode(newCarousel.content, true));
 }
 function showSmallCarousel() {
-    console.log("starting draw small carousel...");
     var currentCarousel = document.querySelector('.csslider');
     if (currentCarousel.offsetWidth == 0){
         console.log('something bad happens :(');
