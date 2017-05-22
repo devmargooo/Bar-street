@@ -36,13 +36,14 @@
 .carousel-big-item-extended-caption{
   @include carousel-big-caption-theme;
   height: 7rem;
-  margin-top: 4.5rem;
+  margin-top: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
 .carousel-big-item-extended{
-  width: 97%;
+  width: 100%;
   float: right;
+  margin-top: 10px;
   margin-right: 18px;
 }
 
