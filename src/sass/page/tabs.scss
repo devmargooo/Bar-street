@@ -4,7 +4,7 @@
   animation: load 1s;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:visited{
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:visited, .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus{
   width: 26rem;
   height: 12rem;
   background: $c-fg-primary;

@@ -85,9 +85,6 @@ var changeCarouselState = function() {
 }
 
 function init() {
-    /*console.log("small: " + !!checkIfSmallCarouselIsShowing());
-    console.log("medium: " + !!checkIfMediumCarouselIsShowing());
-    console.log("big: " + checkIfBigCarouselIsShowing());*/
     changeTabsState();
     changeCarouselState();
 }
