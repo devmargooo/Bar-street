@@ -525,6 +525,16 @@
           </div>
       </div>
       <button class="button-answer" type="button">Написать ответ</button>
+      <div class="popup">
+          <form class="callback-form">
+              <h2>Обратная связь</h2>
+              <input type="text" class="callback-form__input" placeholder="Имя">
+              <input type="email" class="callback-form__input" placeholder="Email">
+              <input type="tel" class="callback-form__input" placeholder="Телефон">
+              <button type="submit" class="callback-form__button">Перезвонить</button>
+          </form>
+          <button class="callback-form__close" type="button" onclick="hideCallbackForm()">Закрыть</button>
+      </div>
   </footer>
   <div class="responsive responsive-desktop"></div>
   <div class="responsive responsive-tablet-portret"></div>

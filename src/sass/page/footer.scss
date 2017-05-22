@@ -11,6 +11,7 @@
 }
 .footer{
   @include footer-theme;
+  position: relative;
   padding-bottom: 4rem;
 }
 .footer__message{

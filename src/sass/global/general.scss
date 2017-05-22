@@ -117,3 +117,10 @@ html{
     opacity: 0.6;
   }
 }
+
+//Input placeholder
+
+::-webkit-input-placeholder {color:#bebebe;}
+::-moz-placeholder          {color:#bebebe;}/* Firefox 19+ */
+:-moz-placeholder           {color:#bebebe;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#bebebe;}
